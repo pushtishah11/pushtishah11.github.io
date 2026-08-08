@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pushti Shah — AI Engineer</title>
+<meta name="description" content="Pushti Shah — AI engineer building RAG pipelines, ML systems, and media workflows. Math-CS @ UC San Diego. AI Engineering Intern @ Paramount / CBS News." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#/"><span class="tilde">~/</span>pushti</a>
+    <div class="nav-links">
+      <a href="#/" data-r="/">home</a>
+      <a href="#/about" data-r="/about">about</a>
+      <a href="#/experience" data-r="/experience">experience</a>
+      <a href="#/projects" data-r="/projects">projects</a>
+      <a href="#/skills" data-r="/skills">skills</a>
+      <a href="#/beyond" data-r="/beyond">beyond</a>
+      <a href="#/contact" data-r="/contact">contact</a>
+    </div>
+    <button class="term-btn" id="qterm-toggle" aria-label="Toggle terminal console" title="Toggle console (`)">&gt;_</button>
+  </div>
+</nav>
+
+<!-- drop-down console -->
+<div id="qterm" aria-label="Drop-down terminal console" aria-hidden="true">
+  <div class="term-bar">
+    <span class="dot a"></span><span class="dot b"></span><span class="dot c"></span>
+    <span class="term-title">console — press ` or esc to close</span>
+  </div>
+  <div class="term-body" id="qterm-out"></div>
+  <div class="term-input-row">
+    <span class="p">➜</span><span class="c">~</span>
+    <input id="qterm-input" type="text" autocomplete="off" spellcheck="false" aria-label="Console command input" placeholder="help · projects · experience · contact…" />
+  </div>
+  <div class="term-hint">navigate from anywhere — try `projects`</div>
+</div>
+
+<!-- ================= HOME ================= -->
+<section class="page" id="p-home">
+  <div class="wrap">
+    <div class="term" aria-label="Interactive terminal">
+      <div class="term-bar">
+        <span class="dot a"></span><span class="dot b"></span><span class="dot c"></span>
+        <span class="term-title">pushti@nyc — zsh</span>
+      </div>
+      <div class="term-body" id="term-out"></div>
+      <div class="term-input-row">
+        <span class="p">➜</span><span class="c">~</span>
+        <input id="term-input" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal command input" placeholder="type `help`" />
+      </div>
+    </div>
+
+    <div class="bento">
+      <a class="card s4" href="#/experience">
+        <span class="go">↗</span>
+        <div class="k">currently</div>
+        <h3>AI Engineering Intern — Paramount / CBS News</h3>
+        <p>Building AI-powered media workflows and retrieval systems for one of the largest newsrooms in the country. Summer 2026, New York City.</p>
+      </a>
+      <a class="card s2" href="#/projects">
+        <span class="go">↗</span>
+        <div class="k">projects</div>
+        <div class="stat">6+</div>
+        <div class="stat-l">shipped builds — RAG, ML, full-stack</div>
+      </a>
+      <a class="card s2" href="#/about">
+        <span class="go">↗</span>
+        <div class="k">education</div>
+        <h3>UC San Diego</h3>
+        <p>Math–CS · Data Science minor · GPA 3.9 · Class of 2027</p>
+      </a>
+      <a class="card s2" href="#/skills">
+        <span class="go">↗</span>
+        <div class="k">focus</div>
+        <h3>RAG · NLP · LLM systems</h3>
+        <p>Embeddings, retrieval pipelines, evaluation, automation.</p>
+      </a>
+      <a class="card s2" href="#/beyond">
+        <span class="go">↗</span>
+        <div class="k">beyond work</div>
+        <h3>Scuba · hoops · builds 🤿</h3>
+        <p>Certified diver, Warriors fan, serial side-project starter.</p>
+      </a>
+      <a class="card s6" href="#/contact">
+        <span class="go">↗</span>
+        <div class="k">contact</div>
+        <h3>Say hello — open to AI/ML engineering roles for 2027</h3>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="page" id="p-about">
+  <div class="wrap">
+    <div class="eyebrow">$ cat about.md</div>
+    <h1>Engineer at the intersection of ML systems and real products.</h1>
+    <div class="about-grid">
+      <div>
+        <div class="portrait">
+          <img src="photos/pushti.png" alt="Pushti Shah" width="500" height="500" loading="lazy">
+          <div class="portrait-cap">pushti.png · 500×500 · nyc, summer '26</div>
+        </div>
+      </div>
+      <div>
+    <p class="sub" style="margin-top:0">I'm Pushti — a Mathematics–Computer Science junior at UC San Diego (Data Science minor, GPA 3.9), currently in New York as an AI Engineering Intern at Paramount, working with CBS News.</p>
+    <p class="sub">My work sits where machine learning meets production: retrieval-augmented generation pipelines that parse 200-page documents, NLP clustering that cleans up 10k+ messy skill taxonomies, and full-stack platforms that turn health data into something people can actually read. I like shipping things that hold up outside a notebook.</p>
+    <p class="sub">Before Paramount: frontend and AI platform work at AutomatiqGPT.ai, technical product management at a wellness startup, and ML + backend internships in India. Outside of work, I build side projects, write about ML infrastructure, and follow football analytics closely enough to have simulated Leicester's 2015–16 title 10,000 times.</p>
+    <div class="tags">
+      <span class="tag">San Diego ⇄ New York</span>
+      <span class="tag">B.S. Math–CS, 2027</span>
+      <span class="tag">AI/ML engineering</span>
+      <span class="tag">Writes on Medium</span>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="page" id="p-exp">
+  <div class="wrap">
+    <div class="eyebrow">$ git log --experience</div>
+    <h1>Experience</h1>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="role">AI Engineering Intern</span>
+        <span class="org">Paramount · CBS News</span>
+        <span class="when">Jun 2026 – Aug 2026 · New York, NY</span>
+      </div>
+      <p style="margin-top:10px"><span class="now">● current</span></p>
+      <ul>
+        <li>Building AI-powered tooling for newsroom and media workflows, including retrieval and document-intelligence systems used by internal teams.</li>
+        <li>Working on asynchronous pipelines for indexing and searching large-scale video and media assets.</li>
+      </ul>
+      <div class="tags"><span class="tag">RAG</span><span class="tag">LLM APIs</span><span class="tag">Async pipelines</span><span class="tag">Python</span></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="role">Software Engineer Intern</span>
+        <span class="org">AutomatiqGPT.ai</span>
+        <span class="when">Sep 2025 – Dec 2025 · San Diego, CA</span>
+      </div>
+      <ul>
+        <li>Built and shipped reusable React + Vite UI components for a chat-based AI workflow platform with 500+ active users.</li>
+        <li>Implemented chat persistence and client-side state management to preserve conversation history across reloads and tab switches.</li>
+        <li>Integrated Auth0 authentication and Stripe subscription flows, coordinating with backend APIs on protected routes and payment states.</li>
+      </ul>
+      <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Auth0</span><span class="tag">Stripe</span></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="role">Machine Learning Intern</span>
+        <span class="org">Tenup Software Solutions</span>
+        <span class="when">Jul 2025 – Sep 2025 · Gujarat, India</span>
+      </div>
+      <ul>
+        <li>Built an NLP deduplication + clustering pipeline normalizing 10k+ platform skills into canonical entries using semantic embeddings.</li>
+        <li>Clustered noisy skill data with HDBSCAN and K-Means, iterating on preprocessing to improve grouping accuracy.</li>
+        <li>Developed an incremental auto-promotion workflow for emerging skills, cutting manual taxonomy updates by 40%.</li>
+      </ul>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">Embeddings</span><span class="tag">HDBSCAN</span><span class="tag">K-Means</span></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="role">Technical Product Manager</span>
+        <span class="org">Youphoria (wellness startup)</span>
+        <span class="when">Sep 2024 – Sep 2025 · San Diego, CA</span>
+      </div>
+      <ul>
+        <li>Built survey pipelines and SQL/Python data workflows automating collection, cohort segmentation, and behavioral analysis (−40% manual effort).</li>
+        <li>Developed AI-driven personalization logic with recommendation heuristics and behavioral clustering, contributing to ~25% growth in early engagement.</li>
+      </ul>
+      <div class="tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Product</span></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <span class="role">Software Engineer Intern</span>
+        <span class="org">Wovv Technologies</span>
+        <span class="when">Aug 2024 – Sep 2024 · Gujarat, India</span>
+      </div>
+      <ul>
+        <li>Built a Java Spring Boot backend ingesting 10,000+ business transactions into structured, queryable formats for real-time analytics.</li>
+        <li>Developed RESTful APIs and aggregation pipelines across 3+ business units, reducing manual reporting effort by ~70%.</li>
+      </ul>
+      <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST APIs</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="page" id="p-proj">
+  <div class="wrap">
+    <div class="eyebrow">$ ls ~/projects</div>
+    <h1>Projects</h1>
+    <div class="bento" style="margin-top:30px">
+      <div class="card s3">
+        <div class="k">rag · ocr · retrieval</div>
+        <h3>AI Search Engine for Document Parsing</h3>
+        <p>Modular RAG pipelines processing 200+ page mortgage documents — Tesseract/PaddleOCR extraction, PyMuPDF parsing, LlamaIndex + Faiss retrieval. 15% faster processing, zero errors on key document insights.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Faiss</span><span class="tag">LlamaIndex</span><span class="tag">OCR</span></div>
+      </div>
+      <div class="card s3">
+        <div class="k">full-stack · health</div>
+        <h3>Thyma — Hormonal Health Dashboard</h3>
+        <p>Wellness platform with interactive heatmaps, trendlines, and symptom trackers, plus real-time Python backends powering personalized insights for conditions like PCOS and hypothyroidism.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">Supabase</span><span class="tag">D3.js</span><span class="tag">Auth0</span></div>
+      </div>
+      <div class="card s3">
+        <div class="k">probabilistic ml</div>
+        <h3>Leicester City 2015–16: Soccer Analytics</h3>
+        <p>Monte Carlo simulations (10,000+ runs) with xG data and Poisson/GLM regression to estimate title probabilities — and counterfactuals showing why standard ML underpredicts outlier seasons.</p>
+        <div class="tags"><span class="tag">Scikit-learn</span><span class="tag">Monte Carlo</span><span class="tag">Pandas</span></div>
+      </div>
+      <div class="card s3">
+        <div class="k">automation</div>
+        <h3>AI Workflow Automation</h3>
+        <p>Multi-step n8n automations connecting LLM APIs, webhooks, and external data sources into reusable pipeline components with conditional branching and data transforms.</p>
+        <div class="tags"><span class="tag">n8n</span><span class="tag">Webhooks</span><span class="tag">LLM APIs</span></div>
+      </div>
+      <div class="card s3">
+        <div class="k">browser tooling</div>
+        <h3>AutoTask — Chrome Extension</h3>
+        <p>A Chrome extension for automating repetitive browser tasks and workflows directly where they happen.</p>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Chrome APIs</span></div>
+      </div>
+      <div class="card s3">
+        <div class="k">writing</div>
+        <h3>On ML Infrastructure — Medium</h3>
+        <p>Technical writing on serving LLMs, including a deep-dive on vLLM and high-throughput inference.</p>
+        <div class="tags"><span class="tag">vLLM</span><span class="tag">Inference</span><span class="tag">Writing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="page" id="p-skills">
+  <div class="wrap">
+    <div class="eyebrow">$ which --all</div>
+    <h1>Skills</h1>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <h3>languages</h3>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">C++</span><span class="tag">C</span><span class="tag">SQL</span><span class="tag">MATLAB</span><span class="tag">HTML/CSS</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>ml & ai</h3>
+        <div class="tags"><span class="tag">RAG</span><span class="tag">NLP</span><span class="tag">Embeddings</span><span class="tag">OCR</span><span class="tag">Prompt engineering</span><span class="tag">GenAI evaluation</span><span class="tag">LLMs</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>frameworks & libraries</h3>
+        <div class="tags"><span class="tag">React</span><span class="tag">Spring Boot</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">LlamaIndex</span><span class="tag">Faiss</span><span class="tag">Streamlit</span><span class="tag">Plotly</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>tools & infra</h3>
+        <div class="tags"><span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">CI/CD</span><span class="tag">Linux</span><span class="tag">JIRA</span><span class="tag">Figma</span><span class="tag">Notion</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEYOND ================= -->
+<section class="page" id="p-beyond">
+  <div class="wrap">
+    <div class="eyebrow">$ cd ~/beyond-work</div>
+    <h1>Beyond work</h1>
+    <p class="sub">The stuff that doesn't fit on a resume but explains a lot about how I think.</p>
+    <div class="bento" style="margin-top:30px">
+
+      <div class="card s3 accent-dive">
+        <div class="k">underwater</div>
+        <h3>Certified scuba diver 🤿</h3>
+        <p>SDI Open Water certified. Trained at Eco Dive in LA — classroom, confined water, then out into the Pacific. Turns out debugging is easier when you've practiced staying calm at depth.</p>
+        <!-- swap the div below for: <img src="photos/dive.jpg" alt="Pushti scuba diving"> -->
+        <div class="photo">[ your dive photo here — replace with &lt;img src="photos/dive.jpg"&gt; ]</div>
+      </div>
+
+      <div class="card s3 accent-hoops">
+        <div class="k">hoops</div>
+        <h3>Basketball — Warriors till the end 🏀</h3>
+        <p>Golden State faithful. Pick-up games when I can, League Pass when I can't. Yes, I have opinions about pace-and-space, and yes, I will bring shot-chart data into the argument.</p>
+        <!-- swap the div below for: <img src="photos/hoops.jpg" alt="Basketball"> -->
+        <div class="photo">[ courtside / jersey / game-day photo here ]</div>
+      </div>
+
+      <div class="card s2">
+        <div class="k">football brain</div>
+        <h3>Sports analytics ⚽</h3>
+        <p>Simulated Leicester's 2015–16 title 10,000 times to prove the models wrong. Sports are my favorite dataset.</p>
+      </div>
+
+      <div class="card s2">
+        <div class="k">building</div>
+        <h3>Wellness & jewelry ✦</h3>
+        <p>Slowly shaping a brand concept at the intersection of jewelry and wellness. Founder energy, early days.</p>
+      </div>
+
+      <div class="card s2">
+        <div class="k">around town</div>
+        <h3>NYC tech scene 🗽</h3>
+        <p>Meetups, open-source AI, and an ongoing quest for the city's best chai. Podcast idea perpetually brewing.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="page" id="p-contact">
+  <div class="wrap">
+    <div class="eyebrow">$ ping pushti</div>
+    <h1>Get in touch</h1>
+    <p class="sub">Open to AI/ML and software engineering opportunities for 2027 — or just to talk about RAG systems, media tech, and football analytics.</p>
+    <div class="contact-list">
+      <div class="contact-row"><span class="lbl">email</span><a href="mailto:pushah@ucsd.edu">pushah@ucsd.edu</a></div>
+      <div class="contact-row"><span class="lbl">linkedin</span><a href="https://www.linkedin.com/in/pushti11" target="_blank" rel="noopener">linkedin.com/in/pushti11</a></div>
+      <div class="contact-row"><span class="lbl">github</span><a href="https://github.com/pushtishah11" target="_blank" rel="noopener">github.com/pushtishah11</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Pushti Shah</span>
+    <span>built with amber phosphor & coffee</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
