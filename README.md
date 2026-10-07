@@ -42,4 +42,4 @@ Vanilla JS · CSS custom properties · IBM Plex Mono/Sans · GitHub Pages
 
 ---
 
-Built by [Pushti Shah](https://www.linkedin.com/in/pushti11) — Math–CS @ UC San Diego '27, AI Engineering Intern @ Paramount/CBS News.
+Built by [Pushti Shah](https://www.linkedin.com/in/pushti11) — Math–CS @ UC San Diego '27, former AI Engineering Intern @ Paramount/CBS News.

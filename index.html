@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Pushti Shah — AI Engineer</title>
-<meta name="description" content="Pushti Shah — AI engineer building RAG pipelines, ML systems, and media workflows. Math-CS @ UC San Diego. AI Engineering Intern @ Paramount / CBS News." />
+<meta name="description" content="Pushti Shah — AI engineer building RAG pipelines, ML systems, and media workflows. Math-CS @ UC San Diego. Former AI Engineering Intern @ Paramount / CBS News." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
     <div class="term" aria-label="Interactive terminal">
       <div class="term-bar">
         <span class="dot a"></span><span class="dot b"></span><span class="dot c"></span>
-        <span class="term-title">pushti@nyc — zsh</span>
+        <span class="term-title">pushti@ucsd — zsh</span>
       </div>
       <div class="term-body" id="term-out"></div>
       <div class="term-input-row">
@@ -62,8 +62,8 @@
       <a class="card s4" href="#/experience">
         <span class="go">↗</span>
         <div class="k">currently</div>
-        <h3>AI Engineering Intern — Paramount / CBS News</h3>
-        <p>Building AI-powered media workflows and retrieval systems for one of the largest newsrooms in the country. Summer 2026, New York City.</p>
+        <h3>Tutor, DSC 198 (DSROCKS I) — UC San Diego</h3>
+        <p>Fall 2026 – Present. Previously an AI Engineering Intern at Paramount / CBS News, where I built a risk-scoring system and LLM extraction layer for a 3.3M-asset video archive.</p>
       </a>
       <a class="card s2" href="#/projects">
         <span class="go">↗</span>
@@ -75,7 +75,7 @@
         <span class="go">↗</span>
         <div class="k">education</div>
         <h3>UC San Diego</h3>
-        <p>Math–CS · Data Science minor · GPA 3.9 · Class of 2027</p>
+        <p>Math–CS · Data Science minor · GPA 3.8 · Class of 2027</p>
       </a>
       <a class="card s2" href="#/skills">
         <span class="go">↗</span>
@@ -107,15 +107,15 @@
       <div>
         <div class="portrait">
           <img src="photos/pushti.png" alt="Pushti Shah" width="500" height="500" loading="lazy">
-          <div class="portrait-cap">pushti.png · 500×500 · nyc, summer '26</div>
+          <div class="portrait-cap">pushti.png · 500×500 · ucsd, class of '27</div>
         </div>
       </div>
       <div>
-    <p class="sub" style="margin-top:0">I'm Pushti — a Mathematics–Computer Science junior at UC San Diego (Data Science minor, GPA 3.9), currently in New York as an AI Engineering Intern at Paramount, working with CBS News.</p>
-    <p class="sub">My work sits where machine learning meets production: retrieval-augmented generation pipelines that parse 200-page documents, NLP clustering that cleans up 10k+ messy skill taxonomies, and full-stack platforms that turn health data into something people can actually read. I like shipping things that hold up outside a notebook.</p>
-    <p class="sub">Before Paramount: frontend and AI platform work at AutomatiqGPT.ai, technical product management at a wellness startup, and ML + backend internships in India. Outside of work, I build side projects, write about ML infrastructure, and follow football analytics closely enough to have simulated Leicester's 2015–16 title 10,000 times.</p>
+    <p class="sub" style="margin-top:0">I'm Pushti — a Mathematics–Computer Science student at UC San Diego (Data Science minor, GPA 3.8), currently tutoring DSC 198 (DSROCKS I). This past summer I was an AI Engineering Intern at Paramount in New York, working with CBS News.</p>
+    <p class="sub">My work sits where machine learning meets production: a risk-scoring system and LLM extraction layer over a 3.3M-asset news video archive, retrieval-augmented generation pipelines that parse 200-page documents, NLP clustering that cleans up 10K+ messy skill taxonomies, and full-stack platforms that turn health data into something people can actually read. I like shipping things that hold up outside a notebook.</p>
+    <p class="sub">Before Paramount: frontend and AI platform work at AutomatiqGPT.ai, technical product management at a wellness startup, and an ML internship in India. Outside of work, I build side projects, write about ML infrastructure, and follow football analytics closely enough to have simulated Leicester's 2015–16 title 10,000 times.</p>
     <div class="tags">
-      <span class="tag">San Diego ⇄ New York</span>
+      <span class="tag">San Diego, CA</span>
       <span class="tag">B.S. Math–CS, 2027</span>
       <span class="tag">AI/ML engineering</span>
       <span class="tag">Writes on Medium</span>
@@ -133,16 +133,26 @@
 
     <div class="entry">
       <div class="entry-top">
+        <span class="role">Tutor, DSC 198 (DSROCKS I)</span>
+        <span class="org">UC San Diego</span>
+        <span class="when">Fall 2026 – Present · La Jolla, CA</span>
+      </div>
+      <p style="margin-top:10px"><span class="now">● current</span></p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
         <span class="role">AI Engineering Intern</span>
         <span class="org">Paramount · CBS News</span>
         <span class="when">Jun 2026 – Aug 2026 · New York, NY</span>
       </div>
-      <p style="margin-top:10px"><span class="now">● current</span></p>
       <ul>
-        <li>Building AI-powered tooling for newsroom and media workflows, including retrieval and document-intelligence systems used by internal teams.</li>
-        <li>Working on asynchronous pipelines for indexing and searching large-scale video and media assets.</li>
+        <li>Took an ambiguous problem from archivists (which of 3.3M archived video assets are most at risk) to a production solution: audited the live database schema, turned their judgment into requirements, and designed and shipped a Python/PostgreSQL risk-scoring system the team still runs post-internship.</li>
+        <li>Deployed an LLM extraction layer on AWS Bedrock pulling structured rights and compliance terms from free-text metadata that rules could not parse, and traced a precision failure to prompt design rather than model capability, letting a cheaper model outperform a costlier one.</li>
+        <li>Cut full-archive scoring runtime 25x (110 minutes to under 5) by diagnosing a memory-bound allocation pattern and re-architecting the pipeline to stream metadata in constant-memory chunks; hardened it with a 48-test regression suite.</li>
+        <li>Built an async video indexing pipeline on the Mimir platform calling TwelveLabs Pegasus across an 8PB archive, generating story breakdowns and IPTC news taxonomy classifications.</li>
       </ul>
-      <div class="tags"><span class="tag">RAG</span><span class="tag">LLM APIs</span><span class="tag">Async pipelines</span><span class="tag">Python</span></div>
+      <div class="tags"><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">AWS Bedrock</span><span class="tag">LLMs</span><span class="tag">Async pipelines</span></div>
     </div>
 
     <div class="entry">
@@ -152,9 +162,8 @@
         <span class="when">Sep 2025 – Dec 2025 · San Diego, CA</span>
       </div>
       <ul>
-        <li>Built and shipped reusable React + Vite UI components for a chat-based AI workflow platform with 500+ active users.</li>
-        <li>Implemented chat persistence and client-side state management to preserve conversation history across reloads and tab switches.</li>
-        <li>Integrated Auth0 authentication and Stripe subscription flows, coordinating with backend APIs on protected routes and payment states.</li>
+        <li>Built and shipped reusable React + Vite components for a chat-based AI workflow automation platform with 500+ active users, and integrated Auth0 and Stripe with backend REST APIs, including asynchronous payment failure paths.</li>
+        <li>Fixed a customer-facing defect where conversation history with the AI assistant reset on tab switches and reloads by implementing chat persistence and client-side state management; shipped in Agile sprints with code reviews.</li>
       </ul>
       <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Auth0</span><span class="tag">Stripe</span></div>
     </div>
@@ -166,9 +175,8 @@
         <span class="when">Jul 2025 – Sep 2025 · Gujarat, India</span>
       </div>
       <ul>
-        <li>Built an NLP deduplication + clustering pipeline normalizing 10k+ platform skills into canonical entries using semantic embeddings.</li>
-        <li>Clustered noisy skill data with HDBSCAN and K-Means, iterating on preprocessing to improve grouping accuracy.</li>
-        <li>Developed an incremental auto-promotion workflow for emerging skills, cutting manual taxonomy updates by 40%.</li>
+        <li>Built a Python NLP pipeline normalizing 10K+ noisy, duplicate platform skills into canonical entries with embeddings, HDBSCAN, and K-Means, tuning preprocessing and parameters against evaluation results.</li>
+        <li>Shipped an incremental auto-promotion workflow integrating new clusters into the platform taxonomy, cutting manual updates by 40%; documented the pipeline and presented evaluation reports to the team.</li>
       </ul>
       <div class="tags"><span class="tag">NLP</span><span class="tag">Embeddings</span><span class="tag">HDBSCAN</span><span class="tag">K-Means</span></div>
     </div>
@@ -180,23 +188,10 @@
         <span class="when">Sep 2024 – Sep 2025 · San Diego, CA</span>
       </div>
       <ul>
-        <li>Built survey pipelines and SQL/Python data workflows automating collection, cohort segmentation, and behavioral analysis (−40% manual effort).</li>
-        <li>Developed AI-driven personalization logic with recommendation heuristics and behavioral clustering, contributing to ~25% growth in early engagement.</li>
+        <li>Built survey pipelines and SQL/Python data workflows to automate user data collection, cohort segmentation, and behavioral analysis, cutting manual research effort by ~40%.</li>
+        <li>Developed personalization logic using recommendation heuristics and behavioral clustering to generate tailored wellness insights and tracking features, contributing to ~25% growth in early user engagement.</li>
       </ul>
       <div class="tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Product</span></div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-top">
-        <span class="role">Software Engineer Intern</span>
-        <span class="org">Wovv Technologies</span>
-        <span class="when">Aug 2024 – Sep 2024 · Gujarat, India</span>
-      </div>
-      <ul>
-        <li>Built a Java Spring Boot backend ingesting 10,000+ business transactions into structured, queryable formats for real-time analytics.</li>
-        <li>Developed RESTful APIs and aggregation pipelines across 3+ business units, reducing manual reporting effort by ~70%.</li>
-      </ul>
-      <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST APIs</span></div>
     </div>
   </div>
 </section>
@@ -228,9 +223,9 @@
       </div>
       <div class="card s3">
         <div class="k">automation</div>
-        <h3>AI Workflow Automation</h3>
-        <p>Multi-step n8n automations connecting LLM APIs, webhooks, and external data sources into reusable pipeline components with conditional branching and data transforms.</p>
-        <div class="tags"><span class="tag">n8n</span><span class="tag">Webhooks</span><span class="tag">LLM APIs</span></div>
+        <h3>Networking Follow-Up Automation</h3>
+        <p>An AI workflow that turns meeting notes into a personalized follow-up with Gemini and a structured output parser, logs the contact to Sheets, and saves a Gmail draft so a human reviews before anything is sent.</p>
+        <div class="tags"><span class="tag">n8n</span><span class="tag">Google Gemini</span><span class="tag">Gmail API</span><span class="tag">Google Sheets API</span></div>
         <p><a href="https://github.com/pushtishah11/networking-followup-automation-n8n" target="_blank" rel="noopener">View on GitHub →</a></p>
       </div>
       <div class="card s3">
@@ -278,19 +273,19 @@
     <div class="skill-grid">
       <div class="skill-card">
         <h3>Languages</h3>
-        <div class="tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">C++</span><span class="tag">C</span><span class="tag">SQL</span><span class="tag">MATLAB</span><span class="tag">HTML/CSS</span></div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Java</span><span class="tag">C++</span><span class="tag">C</span><span class="tag">JavaScript</span><span class="tag">MATLAB</span><span class="tag">HTML/CSS</span></div>
       </div>
       <div class="skill-card">
-        <h3>ML & AI</h3>
-        <div class="tags"><span class="tag">RAG</span><span class="tag">NLP</span><span class="tag">Embeddings</span><span class="tag">OCR</span><span class="tag">Prompt engineering</span><span class="tag">GenAI evaluation</span><span class="tag">LLMs</span></div>
+        <h3>Applied AI</h3>
+        <div class="tags"><span class="tag">RAG</span><span class="tag">LLMs</span><span class="tag">LLM &amp; Prompt Evaluation</span><span class="tag">Prompt Engineering</span><span class="tag">NLP</span><span class="tag">Embeddings</span><span class="tag">OCR</span><span class="tag">AWS Bedrock</span><span class="tag">Gemini</span><span class="tag">TwelveLabs</span><span class="tag">LlamaIndex</span><span class="tag">Faiss</span><span class="tag">n8n</span></div>
       </div>
       <div class="skill-card">
-        <h3>Frameworks & Libraries</h3>
-        <div class="tags"><span class="tag">React</span><span class="tag">Spring Boot</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">LlamaIndex</span><span class="tag">Faiss</span><span class="tag">Streamlit</span><span class="tag">Plotly</span></div>
+        <h3>Cloud, Infra &amp; Tools</h3>
+        <div class="tags"><span class="tag">AWS</span><span class="tag">S3</span><span class="tag">Lambda</span><span class="tag">Secrets Manager</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">CI/CD</span><span class="tag">Linux</span><span class="tag">JIRA</span><span class="tag">Figma</span><span class="tag">Notion</span></div>
       </div>
       <div class="skill-card">
-        <h3>Tools & Infra</h3>
-        <div class="tags"><span class="tag">n8n</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">CI/CD</span><span class="tag">Linux</span><span class="tag">JIRA</span><span class="tag">Figma</span><span class="tag">Notion</span></div>
+        <h3>Backend &amp; Data</h3>
+        <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">REST APIs</span><span class="tag">React</span><span class="tag">Spring Boot</span><span class="tag">Express.js</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">Regression Testing</span><span class="tag">Streamlit</span><span class="tag">Plotly</span></div>
       </div>
     </div>
   </div>
@@ -333,8 +328,8 @@
 
       <div class="card s2">
         <div class="k">around town</div>
-        <h3>NYC for the Summer 🗽</h3>
-        <p>Here through summer 2026 — chasing the city's best coffee, exploring a new neighborhood every weekend, and trying to see as much of it as I can before I'm gone.</p>
+        <h3>NYC, Summer 2026 🗽</h3>
+        <p>Spent the summer in the city — chasing the best coffee, exploring a new neighborhood every weekend, and seeing as much of it as I could before heading back to San Diego.</p>
       </div>
 
     </div>
