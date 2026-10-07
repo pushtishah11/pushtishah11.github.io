@@ -15,7 +15,7 @@ A zero-dependency, single-page portfolio built in vanilla HTML/CSS/JS. No framew
 - **Quake-style drop-down console** — press <code>`</code> on any page (or the `>_` button) for keyboard-driven navigation across the whole site
 - **Custom hash router** — six pages (`/about`, `/experience`, `/projects`, `/skills`, `/beyond`, `/contact`) handled in ~10 lines of JS, no router library
 - **Bento-grid layout** — responsive down to mobile
-- **Amber-phosphor terminal theme** — a nod to vintage CRTs, easy on the eyes
+- **Deep-sea terminal theme** — dark teal-on-navy, a nod to vintage CRTs and the ocean floor
 - Accessible defaults: visible keyboard focus, `prefers-reduced-motion` respected, semantic markup
 
 ## Structure
