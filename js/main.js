@@ -31,9 +31,9 @@ function typeLine(html,cmd,done){
 
 function goto(h,print,after){print('<span class="m">opening ~'+h.replace('#/','/')+'…</span>');setTimeout(()=>{location.hash=h;after&&after();},350);}
 const CMDS={
-  help:(p)=>p('<span class="m">available commands:</span>\n  <span class="c">whoami</span>      — who is this\n  <span class="c">now</span>         — what I\'m doing currently\n  <span class="c">home</span>        — back to start\n  <span class="c">about</span>       — the longer story\n  <span class="c">projects</span>    — jump to projects\n  <span class="c">experience</span>  — jump to experience\n  <span class="c">skills</span>      — the toolbox\n  <span class="c">beyond</span>      — life outside the editor\n  <span class="c">contact</span>     — how to reach me\n  <span class="c">resume</span>      — download my resume\n  <span class="c">clear</span>       — clear terminal'),
-  whoami:(p)=>p('Pushti Shah — AI engineer. Math–CS @ UC San Diego \'27. I build retrieval systems, ML pipelines, and products that ship.'),
-  now:(p)=>p('<span class="p">Tutor, DSC 198 @ UC San Diego</span> — Fall 2026 to present. Previously AI Engineering Intern @ Paramount / CBS News (NYC, summer 2026).'),
+  help:(p)=>p('<span class="m">available commands:</span>\n  <span class="c">whoami</span>      - who is this\n  <span class="c">now</span>         - what I\'m doing currently\n  <span class="c">home</span>        - back to start\n  <span class="c">about</span>       - the longer story\n  <span class="c">projects</span>    - jump to projects\n  <span class="c">experience</span>  - jump to experience\n  <span class="c">skills</span>      - the toolbox\n  <span class="c">beyond</span>      - life outside the editor\n  <span class="c">contact</span>     - how to reach me\n  <span class="c">resume</span>      - download my resume\n  <span class="c">clear</span>       - clear terminal'),
+  whoami:(p)=>p('Pushti Shah, AI engineer. Math–CS @ UC San Diego \'27. I build retrieval systems, ML pipelines, and products that ship.'),
+  now:(p)=>p('<span class="p">Tutor, DSC 198 @ UC San Diego</span>, Fall 2026 to present. Previously AI Engineering Intern @ Paramount / CBS News (NYC, summer 2026).'),
   home:(p,after)=>goto('#/',p,after),
   about:(p,after)=>goto('#/about',p,after),
   projects:(p,after)=>goto('#/projects',p,after),
@@ -48,7 +48,7 @@ function runCmd(v,el,after){
   const p=(h)=>lineTo(el,h);
   lineTo(el,P+v.replace(/</g,'&lt;'));
   const fn=CMDS[v];
-  fn?fn(p,after,el):p('<span class="m">command not found: '+v.replace(/</g,'&lt;')+' — try `help`</span>');
+  fn?fn(p,after,el):p('<span class="m">command not found: '+v.replace(/</g,'&lt;')+'. try `help`</span>');
 }
 
 input.addEventListener('keydown',e=>{
@@ -71,7 +71,7 @@ function qtoggle(force){
   qterm.classList.toggle('open',open);
   qterm.setAttribute('aria-hidden',String(!open));
   if(open){
-    if(!qintro){lineTo(qout,'<span class="m">console ready — type `help`, or a page name to jump there.</span>');qintro=true;}
+    if(!qintro){lineTo(qout,'<span class="m">console ready. type `help`, or a page name to jump there.</span>');qintro=true;}
     setTimeout(()=>qinput.focus(),120);
   } else {qinput.blur();}
 }
@@ -89,7 +89,7 @@ qinput.addEventListener('keydown',e=>{
 });
 
 /* intro sequence */
-typeLine('Pushti Shah — AI engineer.\n<span class="m">Math–CS @ UC San Diego · Data Science minor · class of 2027</span>',
+typeLine('Pushti Shah, AI engineer.\n<span class="m">Math–CS @ UC San Diego · Data Science minor · class of 2027</span>',
  'whoami',()=>{
   setTimeout(()=>{
     typeLine('<span class="p">Tutor, DSC 198 @ UC San Diego</span> <span class="m">· fall 2026 – present</span>\n<span class="m">prev: AI Engineering Intern @ Paramount / CBS News · LLM extraction, risk scoring & video indexing</span>',
