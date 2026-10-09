@@ -118,6 +118,9 @@ a.card:hover .go{color:var(--accent)}
 .photo img{width:100%;height:100%;object-fit:cover;border-radius:10px}
 .accent-dive{border-top:3px solid var(--cyan)}
 .accent-hoops{border-top:3px solid var(--accent)}
+.accent-dive,.accent-hoops{display:flex;flex-direction:column}
+.accent-dive p,.accent-hoops p{margin-bottom:14px}
+.accent-dive .photo,.accent-hoops .photo{margin-top:auto}
 
 /* ---------- contact ---------- */
 .contact-list{margin-top:30px;display:grid;gap:12px;max-width:560px}
